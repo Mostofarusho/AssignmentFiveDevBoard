@@ -11,6 +11,8 @@
     <title>Fruit Burst</title>
     <!-- Font Awesome CDN  -->
     <script src="https://kit.fontawesome.com/757699229b.js" crossorigin="anonymous"></script>
+    <!-- Import Cally web component from CDN -->
+    <script type="module" src="https://unpkg.com/cally"></script>
     <!-- Google Font  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,7 +26,7 @@
     </style>
 </head>
 
-<body>
+<body class="mx-4">
     <!-- NavBar  -->
     <div class="navbar bg-base-100 shadow-sm px-4 flex justify-between items-center">
         <!-- Left: Logo + Title -->
@@ -51,6 +53,148 @@
     </div>
 
     <!-- Main Content -->
+    <div class="">
+        <!-- First Three Card  -->
+        <div class="my-4 grid grid-cols-4 gap-4">
+            <!-- First Card  -->
+            <div class="card col-span-1 h-48 bg-blue-50 rounded-xl card-xs shadow-lg flex items-center justify-center p-4">
+                <div class="flex flex-row items-center space-x-8">
+                    <div class="">
+                        <img src="./assets/checkbox.png" alt="Tasks" class="w-8 rounded-sm">
+                    </div>
+                    <div class="">
+                        <p>Task Assigned</p>
+                        <h2 class="text-3xl font-bold">6</h2>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Second Card  -->
+            <div class="card col-span-2 h-48 bg-blue-500 rounded-xl card-xs shadow-lg flex items-center justify-center p-4">
+                <div class="flex flex-row items-center space-x-8">
+                    <div class="">
+                        <img src="./assets/board.png" alt="Tasks" class="w-full rounded-sm">
+                    </div>
+                    <div class="">
+                        <h2 class="text-3xl font-bold text-white">Discover Something New Today!</h2>
+                    </div>
+
+
+                </div>
+            </div>
+            <!-- Third Card  -->
+            <div class="card col-span-1 h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-4">
+                <div class="flex flex-row items-center space-x-4">
+
+                    <!-- Icon -->
+                    <div>
+                        <img src="./assets/calender.png" alt="Calendar" class="w-10 h-10 rounded-sm">
+                    </div>
+
+                    <!-- Current Day -->
+                    <div>
+                        <p id="today" class="text-lg font-semibold text-white"></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <!-- Six Cards  -->
+        <div class="my-4 gird grid-cols-3 gap-4">
+            <!-- First Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>ShopEase</p>
+                    <h2 class="card-title">Fix Mobile Button Issue</h2>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly </p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Second Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>CloudSync</p>
+                    <h2 class="card-title">Add Dark Mode</h2>
+                    <p>Store the user's preference in localStorage, update CSS variables dynamically, and apply a smooth transition effect.</p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Third Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>SwiftPay</p>
+                    <h2 class="card-title"> Optimize Home page</h2>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly </p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fourth Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>Meta</p>
+                    <h2 class="card-title">Add new emoji</h2>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Fifth Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>Google LLC</p>
+                    <h2 class="card-title">Integrate OpenAI API</h2>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+            <!-- Sixth Card  -->
+            <div class="card w-96  card-md h-48 bg-blue-300 rounded-xl shadow-lg flex items-center justify-center p-2">
+                <div class="card-body">
+                    <p>Glassdoar</p>
+                    <h2 class="card-title">Improve Job searching</h2>
+                    <p>Debug using Chrome DevTools, check for overlapping elements, and ensure onClick works properly and ensure onClick works properly</p>
+                    <div class="flex justify-between">
+                        <div class="">
+                            <p>Deadline</p>
+                            <p>21 March 2025</p>
+                        </div>
+                        <button class="btn btn-primary">Completed</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="./js/app.js"></script>
 </body>
