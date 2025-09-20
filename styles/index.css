@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root {
+    --page-bg: white;
+    /* default background */
+}
+
+html {
+    background-color: var(--page-bg);
+    transition: background-color 0.7s ease-in-out;
+}
