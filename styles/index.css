@@ -10,3 +10,9 @@ html {
     background-color: var(--page-bg);
     transition: background-color 0.7s ease-in-out;
 }
+
+.disable {
+    pointer-events: none;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
